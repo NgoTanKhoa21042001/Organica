@@ -1,0 +1,133 @@
+.product-details {
+  &-container {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    gap: 60px;
+    padding-block-end: 50px;
+    border-block-end: 1px solid var(--light-gray);
+    margin-block-end: 40px;
+  }
+}
+
+.product-title {
+  font-size: var(--fs-1);
+}
+
+.product-price {
+  font-size: var(--fs-2);
+}
+
+.product-text {
+  color: var(--sonic-silver);
+  line-height: 1.8;
+}
+
+.product-weight-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  padding-block: 20px 30px;
+}
+
+.product-weight-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.product-weight-label {
+  background-color: var(--spanish-gray);
+  color: var(--white);
+  font-size: var(--fs-8);
+  padding: 10px 15px;
+  min-width: 50px;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.product-weight-title {
+  font-size: var(--fs-7);
+  color: var(--rhythm);
+  min-width: max-content;
+}
+.product-title,
+.product-price {
+  color: var(--russian-violet);
+  font-weight: var(--fw-700);
+}
+
+.product-details-content > .product-rating {
+  margin-block: 20px 30px;
+}
+
+.product-qty {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.product-qty-input {
+  display: inline-block;
+  min-width: 24%;
+  color: var(--black);
+  font-weight: var(--fw-700);
+  border: 1px solid var(--spanish-gray);
+  padding: 11px 20px;
+  text-align: center;
+  outline: none;
+  padding-block: 13.7px;
+}
+
+.product-qty-btn {
+  --fw: var(--fw-700);
+  border-radius: 0;
+  --padding: 16px 40px;
+  font-weight: var(--fw);
+  padding: var(--padding);
+}
+
+.small-img:hover {
+  border: 2px solid var(--emerald);
+}
+
+.description-title {
+  color: var(--russian-violet);
+  font-size: var(--fs-3);
+  margin-block-end: 15px;
+}
+
+.description-text {
+  color: var(--rhythm);
+  line-height: 1.8;
+  margin-block-end: 30px;
+}
+
+.description-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-color: var(--platinum);
+}
+
+.table-heading {
+  font-weight: var(--fw-500);
+  color: var(--onyx);
+  font-size: var(--fs-7);
+  padding: 20px;
+}
+
+.description-table .table-data {
+  text-align: center;
+}
+
+.description-table .table-data,
+.table-heading {
+  color: var(--onyx);
+  font-size: var(--fs-7);
+  padding: 20px;
+}
+
+@media (max-width: 1024px) {
+  .product-details-container {
+    grid-template-columns: 1fr;
+  }
+}

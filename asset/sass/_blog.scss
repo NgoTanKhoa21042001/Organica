@@ -1,0 +1,61 @@
+.blog {
+  padding-block-start: 0;
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  &-card {
+    & .card-content,
+    .card-banner {
+      border: 2px solid var(--mint-cream);
+      padding: 30px;
+    }
+    & .card-banner {
+      background-color: var(--mint-cream);
+      margin-block-end: 0;
+    }
+    & .card-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    & .wrapper-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: var(--fs-7);
+      color: var(--battleship-gray);
+    }
+    & .wrapper-item ion-icon {
+      color: var(--emerald);
+      font-size: 1.5rem;
+    }
+    & .card-title {
+      margin-block: 20px 30px;
+      font-family: var(--ff-roboto);
+      color: var(--russian-violet);
+    }
+    & .card-title a {
+      transition: var(--transition-2);
+    }
+    & .card-title a:hover {
+      color: var(--emerald);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .blog {
+    &-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .blog {
+    &-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

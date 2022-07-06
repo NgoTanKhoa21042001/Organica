@@ -1,0 +1,26 @@
+.partner {
+  padding-block: 150px;
+  background-image: url("../../images/partner-left-bg.png"),
+    url("../../images/partner-right-bg.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, top right;
+  background-color: var(--emerald);
+  &-list {
+    display: flex;
+    padding-block-end: 30px;
+    margin-block-end: -30px;
+    justify-content: space-between;
+  }
+  & .section-subtitle,
+  & .section-title {
+    color: var(--white);
+  }
+}
+
+@media (max-width: 1024px) {
+  .partner {
+    &-item.active {
+      display: none;
+    }
+  }
+}

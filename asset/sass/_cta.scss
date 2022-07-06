@@ -1,0 +1,21 @@
+.cta {
+  padding-block: 120px;
+  background-image: url("../../images/cta-bg.png");
+  background-color: var(--mint-cream);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px 20px;
+  & .section-title {
+    margin-bottom: 0;
+  }
+  & .btn {
+    margin-inline: auto;
+  }
+  &-text {
+    color: var(--sonic-silver);
+    font-size: var(--fs-4);
+    margin-block: 15px 30px;
+  }
+}

@@ -1,0 +1,64 @@
+.newsletter {
+  --fs-3: 2.4rem;
+  &-card {
+    padding-inline: 25px;
+    background-image: url("../../images/partner-left-bg.png"),
+      url("../../images/partner-right-bg.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right top;
+    background-color: var(--gunmetal-2);
+    padding-block: 150px;
+    position: relative;
+  }
+  & .section-title {
+    color: var(--white);
+    font-size: var(--fs-3);
+    line-height: 1.6;
+    margin-block-end: 40px;
+    font-size: var(--fs-3);
+  }
+  & .section-title .span {
+    color: var(--emerald);
+    font-size: var(--fs-4);
+    font-size: inherit;
+  }
+  &-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &-form input {
+    background-color: var(--white);
+    color: var(--battleship-gray);
+    font-size: var(--fs-6);
+    padding: 16px 22px;
+    padding-inline-end: 160px;
+    border-radius: 50px;
+    margin-block-end: 10px;
+  }
+  &-form .btn {
+    position: absolute;
+    top: 2px;
+    right: 3px;
+  }
+}
+
+.form-container {
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .newsletter {
+    --fs-6: 1.9rem;
+    &-form input {
+      font-size: var(--fs-6);
+      width: 580px;
+      padding: 23px 22px;
+    }
+    .newsletter-form .btn {
+      top: 7px;
+      right: 7px;
+      font-size: 2.2rem;
+    }
+  }
+}

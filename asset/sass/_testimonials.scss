@@ -1,0 +1,98 @@
+.testimonials {
+  text-align: center;
+}
+
+.testi-list {
+  display: flex;
+  overflow-x: auto;
+  padding-block-end: 30px;
+  margin-block-end: -30px;
+  gap: 30px;
+}
+.testi-item {
+  min-width: calc(33.33% - 20px);
+  margin-inline: 0;
+}
+.testi-card {
+  background-color: var(--mint-cream);
+  padding: 30px 20px;
+  & .card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  & .card-avatar {
+    border-radius: 50%;
+  }
+  & .product-rating {
+    margin-block: 30px 20px;
+  }
+  & .card-text {
+    color: var(--battleship-gray);
+    line-height: 1.7;
+    font-size: var(--fs-6);
+  }
+  & .card-title {
+    font-size: var(--fs-3);
+    font-weight: var(--fw-500);
+    margin-block: 25px 15px;
+  }
+  & .card-subtitle {
+    color: var(--emerald);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+  }
+}
+
+@media (max-width: 1024px) {
+  .testi-list {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 50%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+  }
+  .testi-list ::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .testi-list > * {
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 767px) {
+  .testi-list {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 100%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+  }
+  .testi-list ::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .testi-list > * {
+    scroll-snap-align: start;
+  }
+}

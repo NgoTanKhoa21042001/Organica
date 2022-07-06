@@ -1,0 +1,52 @@
+.service {
+  --fs-4: 2.7rem;
+  background-image: url("../../images/partner-left-bg.png");
+  background-color: var(--shamrock-green);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-blend-mode: soft-light;
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  &-icon {
+    padding: 25px;
+    background-color: var(--white_25);
+    max-width: max-content;
+    border-radius: 50%;
+  }
+  &-title {
+    font-size: var(--fs-4);
+    color: var(--white);
+  }
+}
+
+@media (max-width: 1024px) {
+  .service {
+    --fs-4: 1.8rem;
+    &-item {
+      gap: 14px;
+    }
+    &-icon {
+      padding: 16px;
+    }
+    .service-title {
+      font-size: var(--fs-4);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .service {
+    &-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
