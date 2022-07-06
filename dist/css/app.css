@@ -778,6 +778,51 @@ button {
   }
 }
 
+@media (max-width: 767px) {
+  .offer {
+    --fs-4: 2.5rem;
+    font-size: var(--fs-4);
+  }
+  .offer-card {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .offer-content {
+    text-align: center;
+  }
+  .offer-content .btn {
+    margin-inline: auto;
+  }
+  .offer-list {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    grid-auto-columns: 100%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+  }
+  .offer-list ::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .offer-list > * {
+    scroll-snap-align: start;
+  }
+}
+
 .product-card {
   background-color: var(--mint-cream);
   padding: 30px 20px;

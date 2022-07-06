@@ -49,3 +49,42 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .offer {
+    --fs-4: 2.5rem;
+    font-size: var(--fs-4);
+    &-card {
+      grid-template-columns: 1fr;
+    }
+    &-content {
+      text-align: center;
+      & .btn {
+        margin-inline: auto;
+      }
+    }
+    &-list {
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 100%;
+      grid-auto-flow: column;
+      grid-gap: 1.5rem;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 1rem;
+      grid-template-columns: unset;
+    }
+    &-list ::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
+    &-list > * {
+      scroll-snap-align: start;
+    }
+  }
+}
