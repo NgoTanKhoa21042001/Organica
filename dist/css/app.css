@@ -1376,6 +1376,29 @@ button {
   }
 }
 
+@media (max-width: 767px) {
+  .newsletter-card {
+    padding: 190px 29px;
+  }
+  .newsletter-form .btn {
+    position: initial;
+    /* text-align: center; */
+    margin-inline: auto;
+    width: 100%;
+    /* text-align: center; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px;
+  }
+  .newsletter-form input {
+    width: 300px;
+  }
+}
+
 .footer {
   background-image: url("../../images/hero-left-bg.png"), url("../../images/hero-right-bg.png");
   background-color: var(--charleston-green);

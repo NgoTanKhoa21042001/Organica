@@ -62,3 +62,24 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .newsletter {
+    &-card {
+      padding: 190px 29px;
+    }
+    &-form .btn {
+      position: initial;
+      /* text-align: center; */
+      margin-inline: auto;
+      width: 100%;
+      /* text-align: center; */
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    &-form input {
+      width: 300px;
+    }
+  }
+}
