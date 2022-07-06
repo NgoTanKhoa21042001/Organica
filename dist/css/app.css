@@ -643,6 +643,9 @@ button {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .hero-title {
+    font-size: 3.4rem;
+  }
 }
 
 .service {
@@ -1440,7 +1443,7 @@ button {
     margin-top: 15px;
   }
   .newsletter-form input {
-    width: 300px;
+    width: 276px;
   }
 }
 
