@@ -1,0 +1,7 @@
+node_modules/**
+# mún ignore mỗi file lib thôi
+!node_modules/script.js
+# ignore tất cả file có đuôi js
+dist1/**.js
+# ignore nhuwng file bắt đầu bằng chữ log
+log*
