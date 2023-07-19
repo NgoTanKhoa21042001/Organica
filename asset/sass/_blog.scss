@@ -3,7 +3,7 @@
   &-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 31px;
   }
   &-card {
     & .card-content,
