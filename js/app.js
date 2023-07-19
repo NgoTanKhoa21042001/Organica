@@ -71,3 +71,9 @@ smallImg[2].onmouseover = function () {
 smallImg[3].onmouseover = function () {
   MainImg.src = smallImg[3].src;
 };
+
+
+const someAdjective = "em oi nr";
+let myStr = "Learning to code is ";
+const khoaEm = myStr += someAdjective
+console.log(khoaEm)
